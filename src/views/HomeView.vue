@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    home
-  </div>
+<div class="home">
+  <div class="test" data-aos="fade-up">test</div>
+</div>
 </template>
 
 <script>
@@ -15,3 +15,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.test {
+  width: 300px;
+  height: 200px;
+  background-color: antiquewhite;
+}
+</style>
