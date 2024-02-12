@@ -52,6 +52,7 @@ export default {
     background-color: #FFFFFF;
   }
   .project {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-color: #706C61;
