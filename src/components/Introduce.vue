@@ -1,6 +1,6 @@
 <template>
 <div class="">
-    About me
+    <!-- About me -->
 </div>
 </template>
 

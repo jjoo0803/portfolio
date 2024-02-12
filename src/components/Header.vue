@@ -20,16 +20,24 @@ export default {
 <style lang="scss" scoped>
 .header {
   display: flex;
+  justify-content: space-around;
   position: fixed;
   width: 100vw;
   height: 100px;
-  background-color:ghostwhite;
+  
   .title {
     display: flex;
-    .tab-container {
-      button {
-        
-      }
+    
+  }
+  .tab-container {
+    display: flex;
+    gap: 50px;
+    button {
+      cursor: pointer;
+      font-size: 20px;
+      outline: none;
+      background: none;
+      border: none;
     }
   }
 }

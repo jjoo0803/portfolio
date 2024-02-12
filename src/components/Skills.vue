@@ -1,5 +1,5 @@
 <template>
-<div class="">
+<div class="skills-component">
   skills
 </div>
 </template>
@@ -12,5 +12,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.skills-component {
+  
+}
 </style>

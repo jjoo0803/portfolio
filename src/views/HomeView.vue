@@ -2,9 +2,9 @@
 <div class="home">
   <div class="main-page">
     <Header></Header>
-    <div class="introduce">
-      <Introduce></Introduce>
-    </div>
+  </div>
+  <div class="introduce">
+    <Introduce></Introduce>
   </div>
   <div class="skills">
     <Skills></Skills>
@@ -37,16 +37,24 @@ export default {
 .home {
   .main-page {
     width: 100vw;
-    height: 700px;
-    .introduce {
-      background-color: #79B4B7;
-    }
+    height: 100vh;
+    background-color: #333333;
+    
   }
-  .skills {  
-    background-color: #FEFBF3;
+  .introduce {
+    width: 100vw;
+    height: 800px;
+    background-color: #E1F4F3;;
+  }
+  .skills {
+    width: 100vw;
+    height: 500px;
+    background-color: #FFFFFF;
   }
   .project {
-    background-color: #F8F0DF;
+    width: 100vw;
+    height: 100vh;
+    background-color: #706C61;
   }
 }
 .test {
