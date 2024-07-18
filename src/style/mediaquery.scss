@@ -1,0 +1,27 @@
+@mixin mobile {   
+  @media screen and (max-width: 767px){
+    //모바일
+    @content;
+  }
+}
+
+@mixin tablet-v {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    // 테블릿 세로
+    @content;
+   }
+}
+
+@mixin tablet-h {
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    // 테블릿 가로
+    @content;
+  }
+}
+
+@mixin desktop {  
+  @media screen and (min-width: 1200px) {
+    // 데스크탑 일반
+    @content;
+  }
+}

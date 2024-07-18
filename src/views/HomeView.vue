@@ -1,18 +1,33 @@
+<script setup>
+import MainHeader from '@/components/MainHeader.vue'
+import ProjectList from '@/components/ProjectList.vue'
+import Menu1 from '@/components/Menu-1.vue'
+import Menu2 from '@/components/Menu-2.vue'
+
+const clickMenuHandler = ((seq) => {
+  console.log(seq)
+  const el = document.getElementsByClassName(`menu-${seq}`)[0]
+  el.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  })
+})
+</script>
+
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MainHeader @onClickMenu="clickMenuHandler"></MainHeader>
+    <Menu1 class="menu-1"></Menu1>
+    <Menu2 class="menu-2"></Menu2>
+    <ProjectList class="menu-3"></ProjectList>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
+<style lang="scss" scoped>
+.home {
+  padding-top: 55px;
 }
-</script>
+.menu-1, .menu-2, .menu-3 {
+  scroll-margin: 55px;
+}
+</style>
