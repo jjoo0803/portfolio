@@ -9,13 +9,16 @@ const testHandler = ((value) => {
 
 <template>
   <div class="grid-box">
-    <div class="grid-container">
+    <!-- <div class="grid-container">
       <ProjectItemVue 
         v-for="(i, index) in 6"
         :key="index"
         :items="'test'"
         @test="testHandler"
       />
+    </div> -->
+    <div>
+      <ProjectItemVue @test="testHandler"></ProjectItemVue>
     </div>
   </div>
 </template>
